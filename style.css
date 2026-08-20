@@ -43,7 +43,13 @@ p{color:var(--muted);font-size:17px}
 .section-heading{text-align:center;max-width:700px;margin:0 auto 42px}
 .section-heading p{margin-top:0}
 .brand-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
-.brand-grid div{background:#fff;border:1px solid #f0eadf;border-radius:14px;padding:20px;text-align:center;font-size:18px;font-weight:800;box-shadow:0 6px 20px rgba(0,0,0,.04)}
+.brand-grid div{background:#fff;border:1px solid #f0eadf;border-radius:14px;padding:20px;text-align:center;font-size:18px;font-weight:800;box-shadow:0 6px 20px rgba(0,0,0,.04)
+ .brand-grid img {
+  width: 180px;
+  height: 120px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto 10px;}
 .small-note{text-align:center;font-size:12px;margin-top:24px}
 .service-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
 .service-grid article{border:1px solid var(--line);border-radius:20px;padding:30px;background:#fff;box-shadow:0 12px 35px rgba(20,33,61,.05)}
