@@ -48,7 +48,6 @@ p{color:var(--muted);font-size:17px}
   width: 100px;
   height: 70px;
   object-fit: contain;
-  display: block;
   margin: 0 auto 10px;}
 .small-note{text-align:center;font-size:12px;margin-top:24px}
 .service-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
