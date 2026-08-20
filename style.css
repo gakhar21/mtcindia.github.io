@@ -1,0 +1,77 @@
+:root{
+  --blue:#123f96;
+  --blue2:#0b2e72;
+  --orange:#f7931e;
+  --cream:#fffaf0;
+  --ink:#14213d;
+  --muted:#667085;
+  --white:#fff;
+  --line:#e8eaf0;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Inter,Arial,Helvetica,sans-serif;color:var(--ink);background:#fff;line-height:1.65}
+a{color:inherit}
+.container{width:min(1120px,92%);margin:auto}
+.site-header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.96);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:30px}
+.brand img{width:120px;height:auto;display:block}
+nav{display:flex;gap:28px;font-weight:700}
+nav a{text-decoration:none;font-size:15px}
+nav a:hover{color:var(--orange)}
+.menu-btn{display:none;border:0;background:none;font-size:28px}
+.hero{background:linear-gradient(135deg,#fffaf0 0%,#fff 58%,#edf4ff 100%);padding:90px 0 80px;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;align-items:center;gap:70px}
+.eyebrow,.section-tag{display:inline-block;color:var(--blue);font-weight:800;letter-spacing:1.5px;font-size:12px}
+h1{font-size:clamp(42px,6vw,72px);line-height:1.04;margin:16px 0 24px;letter-spacing:-2px}
+h2{font-size:clamp(30px,4vw,48px);line-height:1.1;margin:10px 0 20px;letter-spacing:-1px}
+h3{font-size:21px;margin:12px 0 8px}
+p{color:var(--muted);font-size:17px}
+.hero-copy>p{font-size:19px;max-width:650px}
+.hero-actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:30px}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:13px 22px;border-radius:999px;text-decoration:none;font-weight:800;border:2px solid transparent}
+.primary{background:var(--blue);color:#fff}.primary:hover{background:var(--blue2)}
+.secondary{border-color:var(--blue);color:var(--blue)}
+.light{background:#fff;color:var(--blue)}
+.hero-card{background:#fff;border-radius:28px;padding:28px;box-shadow:0 24px 70px rgba(18,63,150,.13);transform:rotate(1deg)}
+.hero-card img{width:100%;display:block;border-radius:16px}
+.location-pill{margin-top:18px;text-align:center;font-weight:800;color:var(--blue)}
+.section{padding:90px 0}
+.two-col{display:grid;grid-template-columns:.9fr 1.1fr;gap:80px}
+.two-col p:first-child{margin-top:0}
+.brands-section{background:var(--cream)}
+.section-heading{text-align:center;max-width:700px;margin:0 auto 42px}
+.section-heading p{margin-top:0}
+.brand-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.brand-grid div{background:#fff;border:1px solid #f0eadf;border-radius:14px;padding:20px;text-align:center;font-size:18px;font-weight:800;box-shadow:0 6px 20px rgba(0,0,0,.04)}
+.small-note{text-align:center;font-size:12px;margin-top:24px}
+.service-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.service-grid article{border:1px solid var(--line);border-radius:20px;padding:30px;background:#fff;box-shadow:0 12px 35px rgba(20,33,61,.05)}
+.icon{width:48px;height:48px;border-radius:12px;background:#eaf1ff;color:var(--blue);display:grid;place-items:center;font-weight:900}
+.cta{background:var(--blue);color:#fff;padding:62px 0}
+.cta p,.cta .section-tag{color:#dce7ff}
+.cta h2{max-width:700px}
+.cta-inner{display:flex;justify-content:space-between;align-items:center;gap:30px}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:70px}
+.contact-card{border:1px solid var(--line);border-radius:22px;padding:32px;background:#fafbff}
+.contact-card strong{color:var(--blue)}
+.contact-card p{margin-top:4px}
+.contact-card a{color:var(--blue);font-weight:700}
+footer{border-top:1px solid var(--line);padding:28px 0;background:#fff}
+.footer-inner{display:flex;align-items:center;justify-content:space-between;gap:20px}
+.footer-inner p{margin:0;font-size:14px}
+.footer-logo{width:90px;height:auto}
+@media(max-width:800px){
+  nav{display:none;position:absolute;top:76px;left:0;right:0;background:#fff;padding:20px 4%;border-bottom:1px solid var(--line);flex-direction:column;gap:14px}
+  nav.open{display:flex}
+  .menu-btn{display:block}
+  .hero{padding:60px 0}
+  .hero-grid,.two-col,.contact-grid{grid-template-columns:1fr;gap:40px}
+  .brand-grid{grid-template-columns:repeat(2,1fr)}
+  .service-grid{grid-template-columns:1fr}
+  .cta-inner{flex-direction:column;align-items:flex-start}
+}
+@media(max-width:430px){
+  .brand-grid{grid-template-columns:1fr}
+  h1{letter-spacing:-1px}
+}

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="MTC India - Multi-brand food distribution company based in Patiala, Punjab.">
+  <title>MTC India | Food Distribution</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a href="#home" class="brand"><img src="logo.jpg" alt="MTC India logo"></a>
+      <button class="menu-btn" aria-label="Open menu" onclick="toggleMenu()">☰</button>
+      <nav id="navMenu">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#brands">Brands</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow">FOOD DISTRIBUTION • PATIALA, PUNJAB</span>
+          <h1>Connecting trusted food brands with the market.</h1>
+          <p>MTC India is a multi-brand food distribution company serving retailers, wholesalers and food-service businesses with a diverse portfolio of established food products.</p>
+          <div class="hero-actions">
+            <a class="btn primary" href="tel:+919855003344">Call MTC India</a>
+            <a class="btn secondary" href="https://wa.me/919855003344" target="_blank" rel="noopener">WhatsApp Us</a>
+          </div>
+        </div>
+        <div class="hero-card">
+          <img src="logo.jpg" alt="MTC India">
+          <div class="location-pill">📍 Patiala, Punjab, India</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container two-col">
+        <div>
+          <span class="section-tag">ABOUT MTC INDIA</span>
+          <h2>A reliable partner for multi-brand food distribution.</h2>
+        </div>
+        <div>
+          <p>MTC India is based at SCF 11, DLF Complex, Sirhind Road, Patiala, Punjab. We bring together a broad range of food brands under one distribution portfolio, helping business customers access products through an efficient and dependable supply network.</p>
+          <p>Our focus is simple: dependable service, strong business relationships and convenient access to quality food products.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="brands" class="section brands-section">
+      <div class="container">
+        <div class="section-heading">
+          <span class="section-tag">OUR BRAND PORTFOLIO</span>
+          <h2>Brands we distribute</h2>
+          <p>A diverse selection of well-known food brands across categories.</p>
+        </div>
+        <div class="brand-grid">
+          <div>McCain</div><div>Veeba</div><div>Pillsbury</div><div>Amul</div>
+          <div>Real</div><div>Meatzza</div><div>Prasuma</div><div>Fresh2Go</div>
+          <div>Mohmaya</div><div>Snacklicious</div><div>Tastecraft</div><div>Mother Dairy</div>
+          <div>Gustora</div><div>Mr. Chef</div><div>Baki Paki</div><div>Makino</div>
+        </div>
+        <p class="small-note">Brand names are shown for portfolio/distribution identification and remain the property of their respective owners.</p>
+      </div>
+    </section>
+
+    <section id="services" class="section">
+      <div class="container">
+        <div class="section-heading">
+          <span class="section-tag">WHAT WE DO</span>
+          <h2>Distribution made easier.</h2>
+        </div>
+        <div class="service-grid">
+          <article><div class="icon">01</div><h3>Multi-brand distribution</h3><p>Access a broad food-product portfolio through one distribution partner.</p></article>
+          <article><div class="icon">02</div><h3>Retail & wholesale supply</h3><p>Supporting retailers and wholesalers with dependable product availability.</p></article>
+          <article><div class="icon">03</div><h3>Business relationships</h3><p>Focused on responsive service and long-term relationships with customers and brand partners.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="container cta-inner">
+        <div>
+          <span class="section-tag">LET'S WORK TOGETHER</span>
+          <h2>Looking for food distribution in Patiala?</h2>
+          <p>Get in touch with MTC India to discuss your requirements.</p>
+        </div>
+        <a class="btn light" href="#contact">Contact Us</a>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+      <div class="container contact-grid">
+        <div>
+          <span class="section-tag">CONTACT</span>
+          <h2>Let's connect.</h2>
+          <p>For distribution enquiries, product availability and business enquiries, contact MTC India.</p>
+        </div>
+        <div class="contact-card">
+          <div><strong>Address</strong><p>SCF 11, DLF Complex,<br>Sirhind Road, Patiala,<br>Punjab, India</p></div>
+          <div><strong>Phone / WhatsApp</strong><p><a href="tel:+919855003344">+91 98550 03344</a></p></div>
+          <div><strong>Email</strong><p><a href="mailto:shirdifoods@yahoo.com">shirdifoods@yahoo.com</a></p></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <img src="logo.jpg" alt="MTC India" class="footer-logo">
+      <p>© <span id="year"></span> MTC India. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById('navMenu').classList.toggle('open');
+    }
+    document.querySelectorAll('#navMenu a').forEach(a => {
+      a.addEventListener('click', () => document.getElementById('navMenu').classList.remove('open'));
+    });
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
