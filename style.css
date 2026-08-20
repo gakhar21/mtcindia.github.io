@@ -15,7 +15,7 @@ a{color:inherit}
 .container{width:min(1120px,92%);margin:auto}
 .site-header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.96);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
 .nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:30px}
-.brand img{width:120px;height:auto;display:block}
+.brand img{width:100px;height:auto;display:block}
 nav{display:flex;gap:28px;font-weight:700}
 nav a{text-decoration:none;font-size:15px}
 nav a:hover{color:var(--orange)}
@@ -45,9 +45,11 @@ p{color:var(--muted);font-size:17px}
 .brand-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
 .brand-grid div{background:#fff;border:1px solid #f0eadf;border-radius:14px;padding:20px;text-align:center;font-size:18px;font-weight:800;box-shadow:0 6px 20px rgba(0,0,0,.04)
  .brand-grid img {
-  width: 80px;
-  height: 60px;
+  width: 100px;
+  height: 70px;
+  max-width: 100px;
   object-fit: contain;
+  display: block;
   margin: 0 auto 10px;}
 .small-note{text-align:center;font-size:12px;margin-top:24px}
 .service-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
