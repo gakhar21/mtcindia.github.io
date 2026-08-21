@@ -55,7 +55,7 @@ p{color:var(--muted);font-size:17px}
 .brand {
   text-align: center;
 }
-.brand-grid img {
+.brand img {
   width: 100px;
   height: 70px;
   max-width: 100px;
