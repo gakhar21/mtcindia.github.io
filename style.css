@@ -46,12 +46,12 @@ p{color:var(--muted);font-size:17px}
 .brand-grid div{background:#fff;border:1px solid #f0eadf;border-radius:14px;padding:20px;text-align:center;font-size:18px;font-weight:800;box-shadow:0 6px 20px rgba(0,0,0,.04)}
 .brand-row {
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 30px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
   flex-wrap: wrap;
 }
-
 .brand {
   text-align: center;
 }
@@ -60,8 +60,7 @@ p{color:var(--muted);font-size:17px}
   height: 70px;
   max-width: 100px;
   object-fit: contain;
-  display: block;
-  margin: 0 auto 10px;}
+ }
 .small-note{text-align:center;font-size:12px;margin-top:24px}
 .service-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
 .service-grid article{border:1px solid var(--line);border-radius:20px;padding:30px;background:#fff;box-shadow:0 12px 35px rgba(20,33,61,.05)}
